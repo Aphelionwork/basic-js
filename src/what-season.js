@@ -19,7 +19,7 @@ function getSeason(date) {
     throw Error('Invalid date!');
   } 
 
-    let month = date.getMonth()+1;
+    const month = date.getMonth()+1;
     let season = '';
 
       switch (month) {
@@ -45,7 +45,6 @@ function getSeason(date) {
         break;
       }
       return season;
-   
 }
 
 module.exports = {
